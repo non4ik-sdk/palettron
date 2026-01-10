@@ -17,8 +17,8 @@ python bot.py
 ```
 ### Docker запуск:
 ```
-docker build -t mlkimage .
-docker run --name milkbot1 --restart unless-stopped mlkimage
+docker build -t palettron .
+docker run --name palettron --restart unless-stopped palettron
 ```
 
 ## Дополнение
@@ -36,5 +36,6 @@ docker run --name milkbot1 --restart unless-stopped mlkimage
 ]
 
 ```
+
 
 
