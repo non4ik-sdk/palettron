@@ -1,4 +1,4 @@
-# MILKBOT PY 3.13.x
+# PALETTRON PY 3.13.x
 
 ## Установка и запуск
 
@@ -36,3 +36,4 @@ docker run --name milkbot1 --restart unless-stopped mlkimage
 ]
 
 ```
+
