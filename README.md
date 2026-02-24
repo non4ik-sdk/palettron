@@ -1,41 +1,12 @@
 # PALETTRON PY 3.13.x
 
-## Установка и запуск
-
-### Клонировать:
-
-```
-git clone https://github.com/x5dfg/palettron.git
-```
->[!WARNING]
->Обязательно убедитесь что вы указали токен для бота в `bot.py` в переменной `API_TOKEN`
-
-### Ручной запуск:
-```
-pip install -r requirements.txt
-python bot.py
-```
-### Docker запуск:
+**Docker:**
 ```
 docker build -t palettron .
-docker run --name palettron --restart unless-stopped palettron
+docker run -d --name palettron --restart always --env-file .env palettron_bot
 ```
-
-## Дополнение
-
-В `palettes.json` можно добавлять/изменять палитры.
-Описание ключ-значений:
-```json
-[
-  {
-    "label": "Lite Milk", // Название палитры которое видно на кнопке
-    "fdata": "lite_milk", // Короткое название которое используется в callback данных
-    "colors": [[142,165,147], [56,111,107], [48,28,30], [26,22,23], [175,50,44], [78,39,61], [173,55,54]] // Палитра цветов (RGB)
-  },
-  ...
-]
-
+**Code:**
 ```
-
-
-
+pip install -r requirements.txt
+python main.py
+```
