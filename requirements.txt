@@ -3,3 +3,4 @@ asyncio
 pillow
 numpy
 aiogram
+dotenv
